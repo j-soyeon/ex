@@ -68,6 +68,7 @@ header {
     flex-direction: row;
     justify-content: end;
     margin-bottom: 10px;
+    margin-right :30px;
 }
 
 .global_menu li a {
@@ -104,7 +105,7 @@ nav {
 .gnb{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 70px;
     width: 1980px;
     position: relative;
 }
@@ -514,6 +515,7 @@ input[id=tab2]:checked ~ .cont .cont2{
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: nowrap;
+    padding: 20px;
 }
 
 /* 탑 */
