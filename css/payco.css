@@ -158,7 +158,7 @@ nav .gnb:hover .snb {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(/images/m_payco/img_kv_main_210325.jpg) no-repeat 0 0 / cover;
+    background: url(/ex/images/m_payco/img_kv_main_210325.jpg) no-repeat 0 0 / cover;
     background-position: center;
 }
 
@@ -301,7 +301,7 @@ nav .gnb:hover .snb {
 .imginner {
     width: 400px;
     height: 400px;
-    background: url(/images/m_payco/카드사진\ 복사.png);
+    background: url(/ex/images/m_payco/카드사진\ 복사.png);
     background-position:left center;
     background-size: 400px 400px;
 }
@@ -318,7 +318,7 @@ nav .gnb:hover .snb {
 .imginner02{
     width: 400px;
     height: 400px;
-    background: url(/images/m_payco/123.jpg);
+    background: url(/ex/images/m_payco/123.jpg);
     background-position:left center;
     background-size: 400px 400px;
 }
@@ -349,7 +349,7 @@ nav .gnb:hover .snb {
 .img_franchisee {
     width: 620px;
     height: 440px;
-    background-image: url(/images/m_payco/img-offline-package@2x.png);
+    background-image: url(/ex/images/m_payco/img-offline-package@2x.png);
     background-size: 620px 440px;
 }
 
