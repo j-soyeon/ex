@@ -1,0 +1,591 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
+/* sWiper 8.4.6 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border:1px solid #000 */
+}
+
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    --swiper-navigation-size: 30px;
+}
+
+.wrap {
+    width: 1440px;
+    margin: 0 auto;
+    gap:10px;
+    /* border : 1px solid purple; */
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border : 1px solid red; */
+}
+.space_1 {
+    visibility : hidden;
+}/* 빈공간 처리용 무시*/
+
+a { 
+    text-decoration : none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+header {
+    margin-top: 10px;
+}
+
+/* 로그인, 회원가입, 고센 시작 */
+.global_menu li:before {
+    content: 'ㅣ';
+    font-size: 10px;
+    color: #aaa;
+    margin: 10px;
+}
+
+.global_menu li:first-child:before {
+    content: '';
+}
+
+.global_menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.global_menu li a {
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+}
+
+.global_menu li:hover a {
+    color: black;
+}
+    
+/* 로그인, 회원가입, 고센 끝 */
+
+/* 나브시작 */
+.logoinner {
+    width: 112px;
+    height: 25px;
+}
+nav .logo img {
+    width: 112px;
+    height: 25px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    position: relative;
+    padding: 10px 0 10px 0;
+    width: 1980px;
+}
+
+.gnb{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 1980px;
+    position: relative;
+}
+
+.gnb li { position: relative; z-index: 10;}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+nav .gnb li:hover .title {color: red;}
+nav .snb a:hover {color: red;}
+.snb {display: none;}
+nav a {color:#333; text-decoration: none;}
+nav a:visited {color:#333;}
+
+nav .gnb .snb {
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    /* font-size: 14px; */
+    color: #333;
+    gap :5px;
+    width: 100%;
+    height: 300px;
+}
+
+nav .gnb:hover .snb {
+    display: flex;
+    width: 1980px;
+    height: 300px;
+}
+
+.gnb::before{
+    display: none;
+    width: 2400px;
+    height: 300px;
+    background: rgba(255,255,255);
+    content: '';position: absolute; right: 0; top :50px;z-index: 0;
+}
+
+.gnb:hover::before {display: block;}
+
+/* 나브끝 */
+
+/* 배너시작 */
+
+.sec01 {
+    display: flex;
+    width: 100%;
+    max-width: 2200px;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/images/m_payco/img_kv_main_210325.jpg) no-repeat 0 0 / cover;
+    background-position: center;
+}
+
+.m_banner h1{
+    gap: 20px;
+    color: #fff;
+}
+.m_banner p{
+    gap: 20px;
+    color: #fff;
+}
+
+.m_banner h1 {
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+/* 배너끝 */
+
+/*연간 거래액 시작*/
+
+.sec02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 350px;
+}
+
+.sec02 .m_txtbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    width: 700px;
+    height: 139px;
+}
+.sec02 .s_txtbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 50px;
+}
+
+.txtbox {
+    text-align: center;
+}
+
+.txtbox01 p { 
+    color : #FA2828;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.txtbox01 h2 { 
+    color : #FA2828;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 85px;
+}
+
+.s_txtbox .bold {
+    color : #333;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+}
+.s_txtbox span {
+    color : #333;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.sb_txt_b1 {
+    color : #555;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.sb_txt_b1 > .xs_txt_b1 {
+    color : #555;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+}
+/*연간 거래액 끝*/
+
+/* 슬라이드시작 */
+.sec03 {
+    width: 800px;
+    height: 500px;
+}
+/* 이벤트버튼시작 */
+.event_bt1{
+    background-color: #333;
+    color : #fff;
+    width: 80px;
+    height: 26px;
+    padding: 3px 20px;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.event_txt1 {
+    color: #797979;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.event_txt2 {
+    color: #333;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.event_txt3 {
+    color: #4E4E4E;
+    font-weight: 400;
+    font-size: 16px;
+}
+/* 이벤트버튼끝 */
+
+.swiper-button-next, .swiper-button-prev {
+    color :#333; 
+}
+
+.slide01 , .slide02 {
+    display: flex;
+}
+
+.imginner {
+    width: 400px;
+    height: 400px;
+    background: url(/images/m_payco/카드사진\ 복사.png);
+    background-position:left center;
+    background-size: 400px 400px;
+}
+
+.txtinner {  
+    display: flex;  
+    width: 400px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imginner02{
+    width: 400px;
+    height: 400px;
+    background: url(/images/m_payco/123.jpg);
+    background-position:left center;
+    background-size: 400px 400px;
+}
+
+.txtinner02 {  
+    display: flex;  
+    width: 400px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 슬라이드끝 */
+
+
+/* 가맹점 신청 시작 */
+.sec05 {
+    width: 662px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.img_franchisee {
+    width: 620px;
+    height: 440px;
+    background-image: url(/images/m_payco/img-offline-package@2x.png);
+    background-size: 620px 440px;
+}
+
+.txt_franchisee {
+    color: #777;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+strong {
+    color: #444;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button {
+    color: #fff;
+    background-color: #FA2828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 167px;
+    height: 64px;
+    border-radius: 15px;
+    border:none;
+    font-size: 14px;
+}
+
+/* button:hover {
+    width: 177px;
+    height: 74px;
+    font-size: 16px;
+} */
+
+/* 가맹점 신청 끝*/
+
+/* 푸터 시작 */
+
+.footer {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    max-width: 2200px;
+    background-color: #333;
+    justify-content: center;
+}
+
+.footer_inner {
+    display: flex;
+    height: 600px;
+    width: 1440px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+/* 탑 */
+.top_footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color : #fff;
+    gap:30px;
+}
+
+.help_inner {
+    display: flex;
+    justify-content : space-between;
+}
+.h_footer {
+    display: flex;
+    font-weight: 700;
+    font-size: 22px;
+}
+.help {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    gap: 40px;
+}
+
+.notice {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 100px;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.help a:link { color: #fff;}
+.help a:visited { color: #fff;}
+.help a:hover { color: #fff;}
+
+/* 탑끝 */
+
+/* 센터 */
+
+.center_footer{
+    display: flex;
+    color: #666;
+    font-weight: 400;
+    font-size: 14px;    
+}
+
+.info{
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:20px;
+}
+
+.f_point {color: #fff;}
+
+/* 센터끝 */
+
+/* 바텀 */
+.bottom_footer {
+    display: flex;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666;
+}
+/* 바텀끝 */
+
+.copyright {
+    font-weight: 400;
+    font-size: 14px;
+    color: #888;
+}
+
+
+/* 탭구조 시작 */
+.sec04 a {color:#333; text-decoration: none;}
+
+.sec04 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2200px;
+    max-width: 3200px;
+    height: auto;
+    padding: 50px 0 50px 0;
+    background: #EAEAEA;
+    flex-direction: column;
+}
+
+/* 메인탭시작 */
+.tabs{
+    width: 800px;
+    height: 770px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+}
+
+.tab-btn{
+    display:flex;
+    width:800px;
+}
+
+.tab-btn .btn {display: flex;}
+
+.tab-btn .btn li {
+    display: flex;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab-btn .btn li:hover,
+.tab-btn .btn li.actvie{
+    background: red;
+    cursor: pointer;
+}
+.tab-btn .btn li:hover a,
+.tab-btn .btn li.actvie a {color: #fff; font-weight: bold;}
+
+.tab-btn .btn li.active a {color: #fff; font-weight: bold;}
+.tab-btn .btn li.active {background: red;}
+.tabs .tab_con{display: none;}
+.tabs .tab_con.active {display: block;}
+
+/* 메인탭끝 */
+
+/* 서브탭시작 */
+.htxt {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 40px 0 40px 0;
+}
+
+.t_stxt {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0 30px 0;
+}
+
+.tabs .sub_tab .sub_con {display: none;}
+.tabs .sub_tab .sub_con.active{display: block;}
+
+.tabs .tab_con .sub_btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.tabs .tab_con .sub_btn li {
+    display: flex; 
+    gap:20px;
+    color:#333;
+}
+
+.tabs .tab_con .sub_btn li:hover,
+.tabs .tab_con .sub_btn li.active {color: red;}
+.sub_tab img {
+    display: flex;
+    margin: auto;
+    width: 220px;
+    height: 445px;
+}
+/* 서브탭끝 */
