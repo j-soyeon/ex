@@ -165,7 +165,7 @@ nav .gnb:hover .snb {
 }
 
 .cardimg{
-    background: url(/각종자료/카드\ 붉은색\ .png) no-repeat;
+    background: url(/ex/각종자료/카드\ 붉은색\ .png) no-repeat;
     background-size: 230px 350px;
     background-position: center;
     padding: 0px;
@@ -291,7 +291,7 @@ nav .gnb:hover .snb {
     width: 496px;
     height: 334px;
     display: flex;
-    background: url(/s_payco/284936239_2212054848944174_1086048157663792906_n.png) no-repeat;
+    background: url(/ex/s_payco/284936239_2212054848944174_1086048157663792906_n.png) no-repeat;
     background-position:left center;
     background-size: 496px 224px;
 }
@@ -300,7 +300,7 @@ nav .gnb:hover .snb {
     width: 496px;
     height: 334px;
     display: flex;
-    background: url(/s_payco/283623372_2206137809535878_8259082279949515579_n복사.jpg) no-repeat;
+    background: url(/ex/s_payco/283623372_2206137809535878_8259082279949515579_n복사.jpg) no-repeat;
     background-position:left center;
     background-size: 480px 224px;
 }
