@@ -163,6 +163,7 @@ nav .gnb:hover .snb {
     padding: 0px;
     margin-top: 70px;
     gap: 30px;
+    margin-bottom: 100px;
 }
 
 .cardimg{
@@ -238,6 +239,7 @@ nav .gnb:hover .snb {
     height: 600px;
     background :#FAFAFA;
     background-position: center;
+    margin-bottom: 100px;
 }
 
 .top_contents{
@@ -406,6 +408,7 @@ input[id=tab2]:checked ~ .cont .cont2{
     height: 430px;
     justify-content: center;
     position: relative;
+    margin-bottom: 120px;
 }
 
 .cont .contbox {

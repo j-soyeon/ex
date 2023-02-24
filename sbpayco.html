@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="/ex/css/sb_payco.css">
     <link rel="stylesheet" media="all and (max-width: 1200px)" href="/ex/css/Tspacyco.css">
@@ -130,7 +131,8 @@
 
     <!-- 탭시작 -->
     <div class="innner">
-        <section class="sec03">
+        <section class="sec03" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <h3 class="space_1">.</h3> <!-- 오류 삭제용/ 빈공간 -->
             <div class="tab_cont">
                 <input type="radio" name="tabmenu" id="tab1" checked>
@@ -299,6 +301,10 @@
     </div>
 
     <!-- 푸터끝 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/ex/js/sbpayco.js"></script>
 </body>
