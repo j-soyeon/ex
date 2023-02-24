@@ -212,6 +212,7 @@ nav .gnb:hover .snb {
 
 .countinner {
     display: flex;
+    flex-direction: row;
 }
 .txtbox {
     text-align: center;
