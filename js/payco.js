@@ -27,3 +27,17 @@ $('.sub_btn li') .click(function(){
   return false;
 });
 console.log()
+
+
+
+    let countBox = document.querySelector('.count'),
+        count = 0;
+
+    let counting = setInterval(function () {
+        if (count == 12000000) {
+            clearInterval(counting);
+            return false;
+        }
+        count += 10000;
+        countBox.innerHTML = new Intl.NumberFormat().format(count);
+    }, 5)
