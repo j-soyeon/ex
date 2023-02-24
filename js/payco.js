@@ -29,7 +29,7 @@ return false;
 console.log()
 
 
-
+// 카운팅시작
 let countBox = document.querySelector('.count'),
     count = 0;
 
@@ -41,3 +41,5 @@ let counting = setInterval(function () {
     count += 10000;
     countBox.innerHTML = new Intl.NumberFormat().format(count);
 }, 5)
+// 카운팅끝
+
