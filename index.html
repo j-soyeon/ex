@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payco</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,200,0,0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="/ex/css/payco.css">
     <link rel="stylesheet" media="all and (max-width: 1024px)" href="/ex/css/Tpacyco.css">
@@ -152,7 +153,8 @@
 
     <!-- 폴더 컨텐츠 시작 -->
     <div class="inner">
-        <div class="sec04">
+        <div class="sec04" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
             <div class="tab-btn">
                 <ul class="btn">
                     <li data-alt="tab1" class="active"><a href="#">결제 서비스</a></li>
@@ -353,6 +355,10 @@
     <!-- 푸터끝 -->
 
     <!-- 스크립트 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/ex/js/jquery.js"></script>
