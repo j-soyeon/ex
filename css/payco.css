@@ -190,7 +190,7 @@ nav .gnb:hover .snb {
     align-items: center;
     width: 700px;
     height: 350px;
-    margin: 0px 0 50px 0;
+    margin: 50px 0 50px 0;
 }
 
 .sec02 .m_txtbox{
@@ -261,7 +261,7 @@ nav .gnb:hover .snb {
 .sec03 {
     width: 800px;
     height: 500px;
-    margin: 50px 0 50px 0;
+    margin: 0 0 50px 0;
 }
 /* 이벤트버튼시작 */
 .event_bt1{
