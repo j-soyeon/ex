@@ -43,3 +43,10 @@ let counting = setInterval(function () {
 }, 5)
 // 카운팅끝
 
+$(".material-symbols-outlined").click(function() {
+  $(".gnb").toggleClass("on");
+  $(this).text(function(e, text) {
+      return text === 'close' ? 'menu' : 'close'
+  });
+});
+
