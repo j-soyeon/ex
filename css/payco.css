@@ -163,6 +163,7 @@ nav .gnb:hover .snb {
     justify-content: center;
     background: url(/ex/images/m_payco/img_kv_main_210325.jpg) no-repeat 0 0 / cover;
     background-position: center;
+    margin: 50px 0 50px 0;
 }
 
 .m_banner h1{
@@ -190,6 +191,7 @@ nav .gnb:hover .snb {
     align-items: center;
     width: 700px;
     height: 350px;
+    margin: 0px 0 50px 0;
 }
 
 .sec02 .m_txtbox{
@@ -260,6 +262,7 @@ nav .gnb:hover .snb {
 .sec03 {
     width: 800px;
     height: 500px;
+    margin: 50px 0 50px 0;
 }
 /* 이벤트버튼시작 */
 .event_bt1{
@@ -347,6 +350,7 @@ nav .gnb:hover .snb {
     justify-content: center;
     align-items: center;
     gap:30px;
+    margin: 50px 0 50px 0;
 }
 
 .img_franchisee {
