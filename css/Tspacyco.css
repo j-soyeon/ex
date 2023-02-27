@@ -86,6 +86,7 @@ nav .gnb:hover .snb{position: relative; height: 170px;}
 /* 햄버거끝 */
 
 .footer_inner {width: 100%; padding: 20px;}
+.footer {width: 100%;}
 .nv_class {width: 100%; padding:0 20px 0 20px;}
 .global_menu {padding-right: 20px;}
 
