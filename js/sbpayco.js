@@ -10,3 +10,10 @@ var swiper = new Swiper(".mySwiper", {
   mousewheel: true,
   keyboard: true,
 });
+
+$(".material-symbols-outlined").click(function() {
+  $(".gnb").toggleClass("on");
+  $(this).text(function(e, text) {
+      return text === 'close' ? 'menu' : 'close'
+  });
+});
