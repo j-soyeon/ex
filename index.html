@@ -10,9 +10,14 @@
 </head>
 
 <body>
+        <!-- particles.js container -->
+        <div id="particles-js"></div> <!-- stats - count particles -->
+        <div class="count-particles"> 
+            <span class="js-count-particles">--</span> 
+        </div>
     <div class="wrap">
         <div class="menu">
-            <ul class="btn">
+            <ul class="btns">
                 <li data-alt="tab1" class="active"><a href="#">MAIN</a></li>
                 <li data-alt="tab2"><a href="#">ABOUT</a></li>
                 <li data-alt="tab3"><a href="#">PROJECT</a></li>
@@ -20,9 +25,15 @@
         </div>
         <div class="tabs">
             <div id="tab1" class="tab_con active">
-                <div class="tab1inner">
-                    <div class="mainBT">DESIGN</div>
-                    <div class="mainBT">UI/UX</div>
+                <div class="tab1_inner">
+                    <div class="container">
+                        <h1>23 WEB PUBLISHING</h1>
+                        <h1>PORTFOLIO</h1>
+                    </div>
+                    <div class="tab1inner">
+                        <div class="mainBT">DESIGN</div>
+                        <div class="mainBT">UI/UX</div>
+                    </div>
                 </div>
             </div>
             <div id="tab2" class="tab_con">
@@ -68,9 +79,15 @@
                 </div>
                 <div id="sub_tab1" class="sub_con active">
                     <div class="tab3inner">
-                        <img src="/ex/img/page1-1.png" class="page" alt="">
+                        <img src="/ex/img/page1.png" class="page" alt="">
+                        <div class="Btn">
+                            <a class="button button-color" href="#"><span class="button-name">피그마</span><i
+                                    class="button-icon fa fa-arrow-right"></i></a>
+                            <a class="button button-color" href="#"><span class="button-name">컨셉서</span><i
+                                    class="button-icon fa fa-arrow-right"></i></a>
+                        </div>
                         <div class="tab_textbox">
-                            <h3>Celltrion</h3>
+                            <!-- <h3>Celltrion</h3> -->
                             <strong>유형</strong>
                             <p>WEB/ 협업 프로젝트</p>
                             <strong>기여도</strong>
@@ -79,9 +96,10 @@
                             <p>Photoshop, Figma</p>
                             <strong>기간</strong>
                             <p>2023.03</p>
+                        </div>
+                        <div class="tab_textbox2">
                             <strong>Overview</strong>
-                            <p>글로벌 헬스케어 리딩기업 셀트리온의<br>
-                                기존 슬라이드 형식 메인 페이지에서,<br>
+                            <p>글로벌 헬스케어 리딩기업 셀트리온의 기존 슬라이드 형식 메인 페이지에서,<br>
                                 Full size로 레이아웃을 변경하여 트랜디함을 더했습니다.</p>
                         </div>
                     </div>
@@ -89,7 +107,7 @@
 
                 <div id="sub_tab2" class="sub_con">
                     <div class="tab3inner">
-                        <img src="/ex/img/page2-1.png" class="page" alt="">
+                        <img src="/ex/img/page3.png" class="page" alt="">
                         <div class="tab_textbox">
                             <h3>PAYCO</h3>
                             <strong>유형</strong>
@@ -102,14 +120,14 @@
                             <p>2022.01~2022.02</p>
                             <strong>Overview</strong>
                             <p>웹사이트 전체에 가독성이 떨어지는 부분을개선하고<br>
-                                컨텐츠를 재배치하여 정보 제공을 중심으로<br>
+                                컨텐츠를 재배치하여 탭구조를 통해 정보 제공을 중심으로<br>
                                 디자인하였습니다.</p>
                         </div>
                     </div>
                 </div>
                 <div id="sub_tab3" class="sub_con">
                     <div class="tab3inner">
-                        <img src="/ex/img/page3-1.png" class="page" alt="">
+                        <img src="/ex/img/page2.png" class="page" alt="">
                         <div class="tab_textbox">
                             <h3>Celltrion</h3>
                             <strong>유형</strong>
@@ -139,11 +157,9 @@
 
 
 
-
-
-
-
-
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="/ex/js/jQuery-3.6.0.js"></script>
     <script src="/ex/js/index.js"></script>
 
