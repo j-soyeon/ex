@@ -36,6 +36,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #E0ECE3;
+  background: url(/ex/website-rays-background-pattern-1637863.png);
 }
 
 
@@ -169,6 +171,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  color: #333;
 }
 
 .tab3inner {
